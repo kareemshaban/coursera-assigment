@@ -3,7 +3,7 @@
 <head>
 <title>Courssera1</title>
   <style>
-    body{
+  body{
   margin: 0 ; 
   padding: 0 ;
 }
@@ -11,14 +11,44 @@ h1{
   text-align: center ;
   
 }
-.maindiv{
+@media (min-width: 992px){
+  .maindiv{
   background-color: gray;
   margin:10px ;
   border: 2px solid black ;
   box-sizing: border-box ;
   position: relative ;
-  height: 200px ;
-  
+  min-height: 200px ;
+  width: 30% ;
+  float:right ;
+  overflow: auto ;
+}
+}
+@media (max-width: 767){
+  .maindiv{
+  background-color: gray;
+  margin:10px ;
+  border: 2px solid black ;
+  box-sizing: border-box ;
+  position: relative ;
+  min-height: 200px ;
+  width: 100% ;
+  float:right ;
+  overflow: auto ;
+}
+}
+@media (min-width: 768px , max-width: 991px){
+  .maindiv{
+  background-color: gray;
+  margin:10px ;
+  border: 2px solid black ;
+  box-sizing: border-box ;
+  position: relative ;
+  min-height: 200px ;
+  width: 50% ;
+  float:right ;
+  overflow: auto ;
+}
 }
 p{
  position:absolute ;
@@ -27,6 +57,7 @@ p{
  left: 10px ;
  text-align:left ;
 }
+
 .titleDiv{
   position: absolute ;
   top: 0px ;
